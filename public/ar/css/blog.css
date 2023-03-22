@@ -1,0 +1,90 @@
+header {border-bottom: 1px solid #ddd;}
+
+.blog {direction: rtl;}
+.blog .eq {display: flex;}
+.blog .prltve {position: relative;}
+.blog .popular_box {padding: 20px; border: 1px solid #e7e7e7; box-sizing: border-box; border-radius: 20px; transition: transform .2s ease-in-out,border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out; position: relative; overflow: hidden; text-align: left; margin-top: 35px; background-color: #ffff;}
+.blog .popular_box:hover {transform: translateY(-0.25rem); box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%);}
+.blog .popular_box h3 {font-size: 22px; color: #212529; margin-top: 20px; text-align: right;}
+.blog .popular_box a {text-decoration: none;}
+.blog .popular_box img {width: 100%; border-radius: 20px;}
+.blog .wrapper_gradient {background: linear-gradient(360deg, #000000 36.73%, rgba(0, 0, 0, 0) 95.56%); opacity: 0.5; width: 100%; height: 100px; position: absolute; bottom: 0; border-radius: 0px 20px 20px 20px;}
+.blog .wrapper_certi_popular h4 {font-size: 16px; color: #fff; margin: 0; padding: 0px 25px; text-align: right;}
+.blog .wrapper_certi_popular {position: absolute; left: 0; bottom: 0; width: 100%; height: 45px; text-align: left;}
+
+
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px){
+
+
+
+}
+
+@media only screen and (min-width : 1600px) and (max-width : 1919px){
+
+
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px){
+
+
+
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px){
+
+
+
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1365px){
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1279px){
+
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1199px){
+.blog .popular_box h3 {font-size: 20px;}
+.blog .popular_box img {border-radius: 15px;}
+.blog .wrapper_gradient {border-radius: 0px 15px 15px 15px;}
+.blog .wrapper_certi_popular h4 {font-size: 14px;}
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+.blog .popular_box h3 {font-size: 20px;}
+
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px){
+
+
+
+}
+
+@media only screen and (max-width : 375px){
+
+
+
+}
+
+@media only screen and (max-width : 360px){
+
+
+
+}
+
+@media only screen and (max-width : 320px){
+
+
+
+}

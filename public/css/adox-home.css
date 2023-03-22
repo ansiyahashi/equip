@@ -1,0 +1,137 @@
+
+
+
+.banner .container-fluid {padding: 60px 80px; background: url(../images/banner-bg.jpg) center repeat-y; background-size: cover; border-radius: 30px; width: 90%;}
+
+.banner h5 {color: #fff; margin-top: 20px; line-height: 30px; width: 80%; font-weight: 400;}
+.banner h2 {font-size: 50px; color: #fff; width: 80%; font-weight: 600;}
+.banner span {color: #363b3e;}
+.banner .app_dow img {width: 28%; margin-top: 20px;}
+
+.works {text-align: center;}
+.works h2 {text-align: center;}
+.works .eq {display: flex;}
+.works .bx {border: 1px solid #ddd; padding: 35px 25px; border-radius: 20px; margin-top: 50px; transition: transform .2s ease-in-out,border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out;}
+.works .bx:hover {transform: translateY(-0.25rem); box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%);}
+.works .bx .number h2 {background: #fff0e3; padding: 15px; border-radius: 100px; width: 70px; height: 70px; margin: auto; font-size: 30px;}Î
+.works .bx .big {font-size: 20px;}
+.works .bx p {color: #595959; line-height: 28px;}
+.works .bx a {font-size: 14px; color: #ef3d32;}
+
+.what {background: #f6f6f6;} 
+.what h4 {font-size: 18px; color: #f58732;} 
+.what p {color: #595959; line-height: 28px;}
+.what .btn {margin: 20px 0 0; padding: 14px 40px; text-align: center; border-radius: 10px; color: #fff; background: #f58732; background-image: linear-gradient(to right ,#f58732, #ef3d32);}
+.what .btn:hover {background-image: linear-gradient(to right ,#ef3d32, #f58732);}
+
+.box .bx {background: #f9f9f9; border: 1px solid #b4b4b4; border-radius: 20px; transition: transform .2s ease-in-out,border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out;} 
+.box .bx:hover {transform: translateY(-0.25rem); box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%);}
+.box .bx p {color: #595959; line-height: 28px;}
+.box .bx .icon {width: 60%;}
+.box .icon-text {padding-left: 1.5rem; width: calc(100% - 3rem - 1);}
+
+
+
+
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px){
+
+
+
+}
+
+@media only screen and (min-width : 1600px) and (max-width : 1919px){
+
+
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px){
+
+
+
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px){
+
+
+
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1365px){
+.banner h2 {font-size: 42px;}
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1279px){
+.banner h2 {font-size: 40px;}
+
+
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1199px){
+.banner .app_dow img {width: 35%;}	
+.banner h2 {font-size: 36px; width: 100%;}
+.banner h5 {width: 100%; font-size: 18px; line-height: 28px;}
+
+.works .bx {padding: 30px 20px;}
+.works .bx .number h2 {width: 60px; height: 60px; font-size: 25px;}
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+.banner .app_dow img {width: 40%;}	
+.banner h2 {font-size: 28px; width: 100%;}
+.banner h5 {margin-top: 15px; font-size: 14px; width: 100%; line-height: 22px;}
+
+.works .eq {display: block;}
+.works .bx {padding: 30px 20px; margin-top: 40px;}
+.works .bx .number h2 {width: 60px; height: 60px; font-size: 25px;}
+
+.what .img-fluid {max-width: 50%;}
+
+.box .bx .icon {width: 30%;}
+.box .mob-bot {margin-bottom: 30px;}
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px){
+.banner .container-fluid {padding: 40px 30px;}	
+.banner .img-fluid {margin-top: 30px;}	
+.banner .app_dow img {width: 40%;}	
+.banner h2 {font-size: 28px; width: 100%;}
+.banner h5 {margin-top: 15px; font-size: 14px; width: 100%; line-height: 22px;}
+
+.works .eq {display: block;}
+.works .bx {padding: 30px 20px; margin-top: 30px;}
+.works .bx .number h2 {width: 60px; height: 60px; font-size: 25px;}
+
+.box .bx {padding: 30px!important;}
+.box .bx .icon {width: 100%;}
+.box .mob-bot {margin-bottom: 30px;}
+ 
+
+}
+
+@media only screen and (max-width : 375px){
+
+
+
+}
+
+@media only screen and (max-width : 360px){
+
+
+
+}
+
+@media only screen and (max-width : 320px){
+
+
+
+}

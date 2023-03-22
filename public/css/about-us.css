@@ -1,0 +1,94 @@
+header {border-bottom: 1px solid #ddd;}
+
+.about {text-align: center;}
+.about h2 {text-align: center;}
+.about p {color: #595959; line-height: 28px; width: 90%; margin: auto;}
+.about .im {width: 90%; border-radius: 40px; margin: 50px auto 0;}
+
+.what {background: #f6f6f6;} 
+.what h2 {font-size: 30px; font-weight: 600;}
+.what p {color: #595959; line-height: 28px;}
+.what .ic img {width: 15%; background: #ec8c2d3d; padding: 12px; border-radius: 15px; margin-bottom: 20px;}
+
+
+
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px){
+
+
+
+}
+
+@media only screen and (min-width : 1600px) and (max-width : 1919px){
+
+
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px){
+
+
+
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px){
+
+
+
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1365px){
+.banner h2 {font-size: 42px;}
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1279px){
+.what h2 {font-size: 26px;}
+
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1199px){
+.what h2 {font-size: 24px;}
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+.about .im {width: 100%;}
+.about h2 {font-size: 26px;}	
+
+.what h2 {font-size: 26px;}
+.what .img-fluid {max-width: 50%;}
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px){
+.about h2 {font-size: 28px;}
+.about .im {width: 100%;}	
+
+.what h2 {font-size: 24px;}
+
+
+}
+
+@media only screen and (max-width : 375px){
+
+
+
+}
+
+@media only screen and (max-width : 360px){
+
+
+
+}
+
+@media only screen and (max-width : 320px){
+
+
+
+}

@@ -1,0 +1,120 @@
+header {border-bottom: 1px solid #ddd;}
+
+.about {text-align: center;}
+.about h2 {text-align: center; font-size: 40px; font-weight: 600;}
+.about p {color: #595959; line-height: 28px; width: 90%; margin: auto;}
+.about .im {width: 90%; border-radius: 40px; margin: 50px auto 0;}
+
+.what {background: #f6f6f6; direction: rtl;} 
+.what h2 {font-size: 30px; font-weight: 600; text-align: right;}
+.what p {color: #595959; line-height: 28px; text-align: right;}
+.what .ic {text-align: right;}
+.what .ic img {width: 15%; background: #ec8c2d3d; padding: 12px; border-radius: 15px; margin-bottom: 20px;}
+
+.download .bg {background: url(../images/download.jpg) no-repeat; background-size: cover; padding: 70px; border-radius: 30px;}
+.download h2 {font-size: 40px; font-weight: 600; color: #fff; text-align: right;}
+.download p {color: #fff; line-height: 28px; text-align: right;}
+.download .app_dow {text-align: right;}
+.download .app_dow img {width: 18%; margin-top: 20px; transition: transform .2s ease-in-out,border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out;}
+.download .app_dow img:hover {transform: translateY(-0.25rem); box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%);}
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px){
+
+
+
+}
+
+@media only screen and (min-width : 1600px) and (max-width : 1919px){
+
+
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px){
+
+
+
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px){
+
+
+
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1365px){
+.banner h2 {font-size: 42px;}
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1279px){
+.what h2 {font-size: 26px;}
+.download h2 {font-size: 36px;}
+
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1199px){
+.what h2 {font-size: 24px;}
+
+.download h2 {font-size: 34px;}
+.download .bg {padding: 60px}
+.download p {width: 40%;}
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+.about .im {width: 100%;}
+.about h2 {font-size: 26px;}	
+
+.what h2 {font-size: 26px;}
+.what .img-fluid {max-width: 50%;}
+ 
+.download h2 {font-size: 28px;}
+.download .bg {padding: 60px}
+.download p {width: 40%;}
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px){
+.about h2 {font-size: 28px;}
+.about .im {width: 100%;}	
+
+.what h2 {font-size: 24px;}
+ 
+.download .bg {background: url(../images/banner-bg.jpg) no-repeat;} 
+.download h2 {font-size: 28px;}
+.download .bg {padding: 50px 35px; border-radius: 20px;}
+.download p {width: 100%;}
+.download .app_dow img {width: 45%; margin-top: 10px;}
+
+
+}
+
+@media only screen and (max-width : 375px){
+
+
+
+}
+
+@media only screen and (max-width : 360px){
+
+
+
+}
+
+@media only screen and (max-width : 320px){
+
+
+
+}

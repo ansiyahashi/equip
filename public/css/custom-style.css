@@ -1,0 +1,76 @@
+.fs-16{
+    font-size: 16px !important;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-22{
+    font-size: 22px;
+}
+.table-borderless th, .table-borderless td, .table-borderless thead th, .table-borderless tbody + tbody{
+    padding: 0.25rem !important;
+}
+.roles-table{
+    padding: 1.25rem 5.4rem !important;
+}
+.emdad_side_bar
+{
+    height: auto !important;
+}
+.modal__label {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+.modal-title{
+    font-size: 1.2rem !important;
+}
+option{
+    padding: 2px 4px 3px !important;
+}
+.ul-form__label
+{
+    color:black !important;
+}
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0px !important;
+}
+small.ul-form__text {
+    color: #434040 !important;
+    font-size: 81% !important;
+}
+.card{
+    margin-bottom: 20px;
+}
+.hidden
+{
+    display: none;
+}
+.item_selected
+{
+    border: 1px solid rgb(63, 63, 102);
+}
+
+ .search_result_item:hover{
+
+    background-color: floralwhite;
+    cursor: pointer;
+
+}
+.col-form-label{
+    color: black !important;
+}
+.tag {
+    background: none repeat scroll 0 0 #f4f4f4;
+    border-radius: 2px;
+    color: #0a0909;
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    padding: 4px 0px 4px 13px !important;
+    margin: 5px 10px 0 0;
+}
+.bootstrap-tagsinput{
+    display: inherit !important;
+}

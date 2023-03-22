@@ -1,0 +1,210 @@
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?66835758');
+  src: url('../font/fontello.eot?66835758#iefix') format('embedded-opentype'),
+  url('../font/fontello.woff?66835758') format('woff'),
+  url('../font/fontello.ttf?66835758') format('truetype'),
+  url('../font/fontello.svg?66835758#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.demo-icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    display: flex;
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    transition-duration: 0.5s;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.zoom img:hover {
+    -webkit-transform: scale(1.08);
+}
+
+h2 {font-size: 40px; font-weight: 600;}
+
+.active{
+  color:#eb4b32;
+}
+
+/*header*/
+header {padding: 20px 0px;}
+header .container-fluid {width: 80%;}
+header .row {align-items: center;}
+header .menu {float: right; margin: 0; align-items: center; display: flex;}
+header .brand img {width: 45%;}
+
+header ul li {float: left; list-style: none;}
+header ul li img {width: 18%; margin-right: 10px; border-radius: 4px;}
+header ul li:not(:last-child) {margin-left: 40px;}
+header ul li a {font-size: 14px; font-weight: 500; color: #000; transition: all 0.5s ease;}
+header ul li a:hover {color: #ef3d32;}
+
+
+header .mob {display: none;}
+
+header .hamburger {position: absolute; width: 40px; height: 45px; top: -20px; right: 14px; z-index: 5;}
+header .hamburger div {position: relative; width: 40px; height: 4px; border-radius: 0px; background-color: #000; margin-top: 7px; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+header #toggle {display: none;}
+
+header #toggle:checked + .hamburger .top {-webkit-transform: rotate(-45deg); transform: rotate(-45deg); margin-top: 22.5px;}
+header #toggle:checked + .hamburger .meat {-webkit-transform: rotate(45deg); transform: rotate(45deg); margin-top: -5px;}
+header #toggle:checked + .hamburger .bottom {-webkit-transform: scale(0); transform: scale(0);}
+header #toggle:checked + .hamburger + .nav {top: 0;}
+header .nav {position: fixed; z-index: 1; width: 100%; height: 100%; background-color: #ef3d32; top: -100%; left: 0; right: 0; bottom: 0; overflow: hidden; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+header .nav .nav-wrapper {position: relative; overflow-y: auto; height: 100%; width: 100%;}
+header nav {padding: 40px; height: 100vh; display: -webkit-box; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; -webkit-box-align: center; align-items: flex-start; -webkit-box-pack: center; justify-content: center;}
+header nav a {margin-top: 1.25em; color: #eee; opacity: 0; text-decoration: none; font-size: 16px; -webkit-transition: all 0.1s ease; transition: all 0.1s ease;}
+header nav a:first-child {margin-top: 0;}
+header #toggle:checked + .hamburger + .nav .nav-wrapper nav a {opacity: 1; border-bottom: 1px solid #fff; width: 100%; margin: inherit;}
+
+header  .dropdown {position: relative; display: inline-block; padding: 12px 0px; border-radius: 10px; margin-left: 40px; border: 1px solid #ddd; text-align: center;}
+header  .dropdown i {font-size: 8px; border: 1px solid #090909; padding: 2px; display: inherit; border-radius: 50px; margin-left: 10px;}
+header  .dropdown-content {display: none; position: absolute; background-color: #fff; min-width: 200px; box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%); z-index: 1; border-radius: 4px; padding: 10px; text-align: left;}
+header  .dropdown-content a {color: #272727; padding: 0px 15px; text-decoration: none; display: block; border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 4px;}
+header  .dropdown-content a:hover {background-color: #f5f5f5; color: #ef3d32;}
+header  .dropdown:hover .dropdown-content {display: block;}
+
+header #toggle:checked + .hamburger + .nav .nav-wrapper nav a {opacity: 1; width: 100%; margin: inherit; background: #fff; margin-bottom: 5px; padding: 0px 18px; color: #f58732; border-radius: 8px; line-height: 50px;}
+
+footer h5 {font-size: 18px; font-weight: 600; margin-bottom: 20px; color: #000;}
+footer ul li {list-style-type: square; color: #f16b33;}
+footer a {font-size: 14px; margin-bottom: 25px; color: #000; line-height: 38px; font-weight: 500; text-decoration: none; -webkit-transition: 0.5s; transition: 0.5s;}
+footer .bot a {font-size: 14px; color: #737373; margin-right: 40px; font-weight: 500; text-decoration: none; -webkit-transition: 0.5s; transition: 0.5s;}
+footer a:hover {color: #ef4437; text-decoration: underline;}
+
+footer .lap {display: block;}
+footer .mob {display: none;}
+
+.download .bg {background: url(../images/download.jpg) no-repeat; background-size: cover; padding: 70px; border-radius: 30px;}
+.download h2 {color: #fff;}
+.download p {color: #fff; line-height: 28px; width: 30%;}
+.download .app_dow img {width: 18%; margin-top: 20px; transition: transform .2s ease-in-out,border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out;}
+.download .app_dow img:hover {transform: translateY(-0.25rem); box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%);}
+
+
+
+
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px){
+
+
+}
+@media only screen and (min-width : 1600px) and (max-width : 1919px){
+
+
+}
+@media only screen and (min-width : 1440px) and (max-width : 1599px){
+
+
+}
+@media only screen and (min-width : 1366px) and (max-width : 1439px){
+
+
+}
+@media only screen and (min-width : 1280px) and (max-width : 1365px){
+
+
+}
+@media only screen and (min-width : 1200px) and (max-width : 1279px){
+h2 {font-size: 36px;}
+
+}
+@media only screen and (min-width : 1024px) and (max-width : 1199px){
+header .container-fluid {width: 92%;}
+
+.download .bg {padding: 60px}
+.download p {width: 40%;}
+
+h2 {font-size: 34px;}
+
+
+
+}
+@media only screen and (min-width : 768px) and (max-width :1023px){
+header .lap {display: none;}
+header .mob {display: flex; flex-wrap: nowrap; margin-right: -15px; margin-left: -15px; justify-content: flex-end;}
+header .brand img {width: 100%;}
+
+.download .bg {padding: 60px}
+.download p {width: 40%;}
+
+h2 {font-size: 28px;}
+
+
+}
+@media only screen and (min-width : 150px) and (max-width : 767px){
+header .lap {display: none;}
+header .mob {display: flex; flex-wrap: nowrap; margin-right: -15px; margin-left: -15px; justify-content: flex-end;}
+header .brand img {width: 100%;}
+
+footer .bot a {margin-right: 10px;}
+footer .lap {display: none;}
+footer .mob {display: block; margin-bottom: 30px;}
+
+.download .bg {background: url(../images/banner-bg.jpg) no-repeat;} 
+.download .bg {padding: 50px 35px; border-radius: 20px;}
+.download p {width: 100%;}
+.download .app_dow img {width: 45%; margin-top: 10px;}
+
+h2 {font-size: 28px;}
+
+
+
+}
+@media only screen and (max-width : 375px){
+
+
+}
+@media only screen and (max-width : 360px){
+
+
+}
+@media only screen and (max-width : 320px){
+
+  
+}

@@ -1,0 +1,109 @@
+header {border-bottom: 1px solid #ddd;}
+
+.address {text-align: center;}
+.address .eq {display: flex;}
+.address .bg {border: 1px solid #ddd; padding: 35px 25px; border-radius: 20px; transition: transform .2s ease-in-out,border-color .2s ease-in-out,background-color .2s ease-in-out,box-shadow .2s ease-in-out;}
+.address .bg:hover {transform: translateY(-0.25rem); box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(19 16 34 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(19 16 34 / 3%);}
+.address .bg h4 {margin: 15px 0px;}
+.address .bg p {color: #595959; line-height: 28px;}
+
+
+.form .bg {background: #f5f5f5; padding: 50px;}
+.form .bg input, textarea {margin-top: 20px; width: 100%; outline: none; background: #fff; padding: 12px 10px; border: none; color: #b8b8b8; font-size: 14px;}
+.form .bg input.btn {margin: 20px 0 0; padding: 14px 40px; text-align: center; border-radius: 10px; color: #fff; background: #f58732; background-image: linear-gradient(to right ,#f58732, #ef3d32);}
+.form .bg input.btn:hover {background-image: linear-gradient(to right ,#ef3d32, #f58732);}
+.form h2 {width: 70%; font-weight: 600;}
+.form p {width: 80%; color: #595959; line-height: 28px; margin-top: 20px;}
+.form .btn {margin: 20px 0 0; padding: 14px 40px; text-align: center; border-radius: 10px; color: #fff; background: #f58732; background-image: linear-gradient(to right ,#f58732, #ef3d32);}
+.form .btn:hover {background-image: linear-gradient(to right ,#ef3d32, #f58732);}
+
+.form .loc .icon {float: left; width: 60px; height: 60px; margin-right: 20px; border-radius: 100px; display: inline-block; padding: 15px; border: 1px solid #ef4132;}
+.form .loc .icon img {width: 100%; margin: auto; display: block;}
+.form .loc h4 {width: 100%; font-weight: 600;}
+.form .loc p {width: 100%; color: #595959; line-height: 28px; margin-top: 10px;}
+.form .loc a {color: #f04232;}
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px){
+
+
+
+}
+
+@media only screen and (min-width : 1600px) and (max-width : 1919px){
+
+
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px){
+
+
+
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px){
+
+
+
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1365px){
+.banner h2 {font-size: 42px;}
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1279px){
+
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1199px){
+.address .bg {padding: 35px 20px;}
+
+.form .bg {padding: 40px;}
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+.about .im {width: 100%;}
+.about h2 {font-size: 26px;}	
+
+.address .bg {width: 100%; margin-bottom: 30px;}
+.form h2 {margin-top: 30px;}
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px){
+.about h2 {font-size: 28px;}
+.about .im {width: 100%;}	
+
+.address .bg {width: 100%; margin-bottom: 30px;}
+.form h2 {margin-top: 30px; width: 100%;}
+.form p {margin-top: 30px; width: 100%;}
+.form .bg {padding: 30px;}
+.form .loc .icon {width: 80px; height: 80px;}
+
+
+}
+
+@media only screen and (max-width : 375px){
+
+
+
+}
+
+@media only screen and (max-width : 360px){
+
+
+
+}
+
+@media only screen and (max-width : 320px){
+
+
+
+}

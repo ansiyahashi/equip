@@ -1,0 +1,92 @@
+header {border-bottom: 1px solid #ddd;}
+
+.blog .eq {display: flex;}
+.blog .prltve {position: relative;}
+.blog .popular_box {padding: 60px; border: 1px solid #e7e7e7; box-sizing: border-box; border-radius: 30px; position: relative; overflow: hidden; text-align: left; margin-top: 35px; background-color: #ffff;}
+.blog .popular_box h3 {font-size: 28px; color: #212529; margin-top: 30px; margin-bottom: 20px;}
+.blog .popular_box p {color: #595959; line-height: 28px;}
+.blog .popular_box a {text-decoration: none;}
+.blog .popular_box img {width: 100%; border-radius: 30px;}
+.blog .wrapper_gradient {background: linear-gradient(360deg, #000000 36.73%, rgba(0, 0, 0, 0) 95.56%); opacity: 0.5; width: 100%; height: 100px; position: absolute; bottom: 0; border-radius: 0px 30px 30px 30px;}
+.blog .wrapper_certi_popular h4 {font-size: 16px; color: #fff; margin: 0; padding: 0px 35px;}
+.blog .wrapper_certi_popular {position: absolute; left: 0; bottom: 0; width: 100%; height: 45px; text-align: left;}
+
+
+
+
+@media only screen and (min-width : 1920px) and (max-width : 2560px){
+
+
+
+}
+
+@media only screen and (min-width : 1600px) and (max-width : 1919px){
+
+
+
+}
+
+@media only screen and (min-width : 1440px) and (max-width : 1599px){
+
+
+
+}
+
+@media only screen and (min-width : 1366px) and (max-width : 1439px){
+
+
+
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1365px){
+
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1279px){
+
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1199px){
+.blog .popular_box {padding: 40px;}	
+.blog .popular_box h3 {font-size: 24px;}
+.blog .wrapper_certi_popular h4 {font-size: 14px;}
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+.blog .popular_box {padding: 40px;}	
+.blog .popular_box h3 {font-size: 24px;}
+
+
+
+}
+
+@media only screen and (min-width : 150px) and (max-width : 767px){
+.blog .popular_box {padding: 20px; border-radius: 20px;}
+.blog .popular_box img {border-radius: 20px;}	
+.blog .wrapper_gradient {border-radius: 0px 20px 20px 20px;}
+.blog .popular_box h3 {font-size: 22px;}
+
+
+}
+
+@media only screen and (max-width : 375px){
+
+
+
+}
+
+@media only screen and (max-width : 360px){
+
+
+
+}
+
+@media only screen and (max-width : 320px){
+
+
+
+}
