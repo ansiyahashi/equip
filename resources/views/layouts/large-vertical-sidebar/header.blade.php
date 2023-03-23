@@ -1,6 +1,6 @@
 <div class="main-header">
     <div class="logo">
-        <img src="{{asset('assets/images/logo.jpg')}}" alt="">
+        <img src="{{asset('assets/images/logoe.jpg')}}" alt="">
     </div>
 
     <div class="menu-toggle">

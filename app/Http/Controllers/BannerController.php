@@ -66,7 +66,7 @@ class BannerController extends Controller
                 'image' => $image,
                 'type' =>  $request->type,
             ];
-            Banner::updateOrCreate(['id'=>$request->cat_id],$input);
+            Banner::updateOrCreate(['id'=>$request->banner_id],$input);
             return response()->json(['code' => 200]);
         } else {
             return response()->json(['code' => 500]);
@@ -74,7 +74,11 @@ class BannerController extends Controller
     }
 
    
-
+    public function edit($id)
+    {
+        $banner = Banner::findOrFail($id);
+        return response()->json($banner);
+    }
   
     public function destroy($id)
     {

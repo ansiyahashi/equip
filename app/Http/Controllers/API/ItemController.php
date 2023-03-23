@@ -9,7 +9,7 @@ use App\Models\BookingDetails;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Item;
-use App\Models\Seller;
+use App\Models\ServiceProvider;
 use DB;
 use Illuminate\Support\Carbon;
 class ItemController extends BaseController
@@ -40,10 +40,38 @@ class ItemController extends BaseController
             return $this->sendError('Please select a location');
         }
     }
+    public function nearest_services(Request $request)
+    {
+        if ($request->latitude) {
+            $latitude = $request->latitude;
+            $longitude = $request->longitude;
+            $radius = 200;
+            
+            
+             $distance =   "(6371 * acos(cos(radians($latitude)) * 
+             cos(radians(items.latitude))
+             * cos(radians(items.longitude) - radians($longitude)
+             ) + sin(radians($latitude)) * sin(radians(items.latitude))))";
+             
+            $response = Item::join('service_providers', 'items.seller_id', 'service_providers.id')
+                
+                ->whereRaw("$distance <= $radius")
+                ->with('service_provider','images')->get();
+            
+             // 
+            if (count($response) > 0) {
+                return $this->sendResponse($response, "Success");
+            } else {
+                return $this->sendError('No Assets found in this Location');
+            }
+        } else {
+            return $this->sendError('Please select a location');
+        }
+    }
 
     public function service_provider_items(Request $request)
     {
-        $seller_id = $request->seller_id;
+        $seller_id = $request->service_provider_id;
         if(empty($seller_id))
         {
             return $this->sendError('Select a Service Provider');
@@ -63,7 +91,7 @@ class ItemController extends BaseController
     {
         $item_id = $request->id;
         if ($item_id) {
-            $data = Item::where('id', $item_id)->with('seller')->first();
+            $data = Item::where('id', $item_id)->with('service_provider')->first();
             if (!empty($data)) {
                 return $this->sendResponse($data, 'success');
             } else {
@@ -81,6 +109,7 @@ class ItemController extends BaseController
         $input['price'] = $request->price;
         $input['driver'] = $request->driver;
          $input['unit'] = $request->unit;
+         $input['time'] = $request->time;
         
         $booking = Booking::create($input);
         if(!empty($booking) > 0 )

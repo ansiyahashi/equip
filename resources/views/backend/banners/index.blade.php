@@ -95,6 +95,11 @@
                 $("#saveBtn").val("Update");
                 $("#title").val("Edit Banner");
                 $("#banner_id").val(data.id);
+                 var image = window.location.origin+'/public/'+data.image
+                 $('#banner_img_preview').append('<div class="card p-1 mr-1" style="width: 5rem;">'+
+                    '<img class="card-img-top" src="'+image+'" alt="Card image cap">'+
+                    ' <button class="btn btn-sm  remove-attachment" data-id="" data-value="" type="button">X</button>'+
+                    '</div>'); 
                  
                 
             });

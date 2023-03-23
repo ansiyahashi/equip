@@ -20,7 +20,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','user_type','seller_id'
+        'name', 'email', 'password','user_type','seller_id','firebase_id','phone'
     ];
 
     /**
@@ -41,9 +41,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function seller_info()
+    public function service_provider_info()
     {
-        return $this->hasOne(\App\Models\Seller::class,'id','seller_id');
+        return $this->hasOne(\App\Models\ServiceProvider::class,'id','seller_id');
     }
 }
-

@@ -24,7 +24,10 @@
                             <div class="form-group col-md-6">
                                 <label for="inputtext11" class="ul-form__label">{{ __('Banner Image') }}:</label>
                                 <input type="file" class="form-control" id="image" name="file">
-                                <input type="hidden" class="form-control" id="banner_id" name="banner_id">
+                                <input type="hidden" class="form-control" value="" id="banner_id" name="banner_id">
+                                <div class="selected_files_preview d-flex"   id="banner_img_preview">
+
+                                </div>
                             </div>
                         </div>
                     </div>

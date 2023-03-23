@@ -14,8 +14,7 @@ class Booking extends Model
     {
         return $this->hasOne(\App\Models\BookingDetails::class, 'booking_id','id');
     }
-    public function 
-    ()
+    public function items()
     {
         return $this->hasOne(\App\Models\Item::class, 'id','item_id');
     }

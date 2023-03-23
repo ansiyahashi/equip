@@ -19,27 +19,36 @@ class ServiceProviderController extends Controller
     }
 
      
+     public function create()
+    {
+        return view('auth.signUp');
+    }
 
     
    
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\ServiceProvider  $serviceProvider
-     * @return \Illuminate\Http\Response
-     */
-    public function show(ServiceProvider $serviceProvider)
+    public function store(Request $request)
     {
-        //
-    }
+        if (User::where('email', $request->email)->first() != null) {
+            Alert::error('Email Exists', 'This email already exist, please try with new email');
+             return back();
+        }
+        $seller_info = $request->except('password', 'email', 'confirm-password');
+        $seller_info= Seller::create($seller_info);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\ServiceProvider  $serviceProvider
-     * @return \Illuminate\Http\Response
-     */
+        $user_info = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' =>  Hash::make($request->password),
+            'user_type' => 'seller',
+            'seller_id' =>$seller_info->id,
+         ];
+        $user = new User();
+        $user_info =  $user->create($user_info);
+        Alert::success('Success', 'Registration Success'); 
+        return view('auth/signIn');
+    }
+    
+    
     public function edit(ServiceProvider $serviceProvider)
     {
         //

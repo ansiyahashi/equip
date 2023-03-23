@@ -10,14 +10,13 @@ class Item extends Model
     use HasFactory;
     protected $guarded = ['id'];
 
-    public function seller()
+    public function service_provider()
     {
-        return $this->belongsTo(\App\Models\Seller::class,'seller_id','id')->with('user')->withDefault(); 
+        return $this->belongsTo(\App\Models\ServiceProvider::class,'seller_id','id')->with('user')->withDefault(); 
     }
     public function images()
     {
-        return $this->hasMany(\App\Models\Upload::class,'id','im
-        age');
+        return $this->hasMany(\App\Models\Upload::class,'id','image');
     }
     public function category()
     {

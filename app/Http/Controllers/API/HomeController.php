@@ -21,7 +21,7 @@ class HomeController extends BaseController
 
     public function banners(Request $request)
     {
-        $seller_id = $request->seller_id;
+        $seller_id = $request->service_provider_id;
         if ($seller_id) {
             $banners = Banner::where('seller_id', $seller_id)->get();
             if(count($banners) > 0)
@@ -32,7 +32,7 @@ class HomeController extends BaseController
                 return $this->sendError('No Banners Found');
             }
         }else{
-            return $this->sendError('Seller missing');
+            return $this->sendError('Choose a Service Provider');
         }
     }
 
@@ -45,80 +45,5 @@ class HomeController extends BaseController
         }else{
             return $this->sendError('Sorry no categories');
         }
-    }
-
-    public function listcategory(Request $request)
-    {
-       $category= category::all();
-       if(count($category)>0)
-       {
-        return $this->sendResponse($category, "Success");
-       }
-      else
-      {
-        return $this->sendError('Sorry no categories'); 
-      }
-
-   
-    }
-
-    public function addcategory(Request $request)
-    {
-       $category= new category();
-       $category->name=$request->name;
-       $category->name_ar=$request->name_ar;
-       $category->description=$request->description;
-       $category->description_ar=$request->description_ar;
-       $category->image=$request->image;
-       $res=$category->save();
-       if($res>0)
-       {
-
-       return $this->sendResponse($category,"success");
-       }
-       else{
-
-
-        return $this->sendError("addition failed");
-       }
-
-
-    }
-    public function editcategory(Request $request)
-    {
-        $category=category::find($request->id);
-        $category->name=$request->name;
-        $category->name_ar=$request->name_ar;
-        $category->description=$request->description;
-        $category->description_ar=$request->description_ar;
-        $category->image=$request->image;
-        $res=$category->update();
-
-        if($res>0)
-        {
-            return $this->sendResponse($category,"updated successfully");
-        }
-        else
-        {
-            return $this->sendError("updation failed");
-        
-        }
-
-
-    }
-    public function deletecategory(Request $request)
-    {
-        
-          $category=category::find( $request->id);
-          $res=$category->delete();
-         if($res>0)
-          {
-         return $this->sendResponse("success","deleted successfully");
-         }
-         else{
-
-         return $this->sendError("deletion failed");
-
-         }
     }
 }
