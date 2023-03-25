@@ -69,3 +69,5 @@ Route::resource('booking', BookingController::class);
 
 //Booking routes
 Route::resource('report', ReportController::class);
+
+//report

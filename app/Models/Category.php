@@ -14,4 +14,6 @@ class Category extends Model
     {
         return $this->hasOne(\App\Models\Upload::class,'id','image')->withDefault(); 
     }
+
+    
 }
